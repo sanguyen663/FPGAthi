@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Jul 18 19:13:09 2022
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : Delay_test
+Top-level Entity Name : Delay_test
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 595 / 6,272 ( 9 % )
+    Total combinational functions : 575 / 6,272 ( 9 % )
+    Dedicated logic registers : 197 / 6,272 ( 3 % )
+Total registers : 197
+Total pins : 20 / 92 ( 22 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

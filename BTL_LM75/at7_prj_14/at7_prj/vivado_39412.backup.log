@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun May 19 16:32:47 2024
+# Process ID: 39412
+# Current directory: C:/Users/admin/Desktop/K? 2 nam th? 3 c?a Hi?u/Giao trinh+TLTK verilog/BTL_LM75/at7_prj_14/at7_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17772 C:\Users\admin\Desktop\K? 2 nam th? 3 c?a Hi?u\Giao trinh+TLTK verilog\BTL_LM75\at7_prj_14\at7_prj\temp_lm75_test.xpr
+# Log file: C:/Users/admin/Desktop/K? 2 nam th? 3 c?a Hi?u/Giao trinh+TLTK verilog/BTL_LM75/at7_prj_14/at7_prj/vivado.log
+# Journal file: C:/Users/admin/Desktop/K? 2 nam th? 3 c?a Hi?u/Giao trinh+TLTK verilog/BTL_LM75/at7_prj_14/at7_prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 19 16:33:09 2024...

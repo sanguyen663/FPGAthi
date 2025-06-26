@@ -1,0 +1,98 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 26652
+License: Customer
+
+Current time: 	Mon May 27 11:07:36 ICT 2024
+Time zone: 	Indochina Time (Asia/Bangkok)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 39 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	admin
+User home directory: C:/Users/admin
+User working directory: C:/Users/admin/Desktop/Bai2_FPGA/led7 doan
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/xilinx/Vivado
+HDI_APPROOT: C:/xilinx/Vivado/2017.4
+RDI_DATADIR: C:/xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/admin/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/admin/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/admin/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/admin/Desktop/Bai2_FPGA/led7 doan/vivado.log
+Vivado journal file location: 	C:/Users/admin/Desktop/Bai2_FPGA/led7 doan/vivado.jou
+Engine tmp dir: 	C:/Users/admin/Desktop/Bai2_FPGA/led7 doan/.Xil/Vivado-26652-LAPTOP-HQ21H1CR
+
+GUI allocated memory:	188 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 663 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 46 MB (+46010kb) [00:00:04]
+// [Engine Memory]: 481 MB (+352958kb) [00:00:04]
+// Opening Vivado Project: C:\Users\admin\Desktop\Bai2_FPGA\led7 doan\led7 doan.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/admin/Desktop/Bai2_FPGA/led7 doan/led7 doan.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/admin/Desktop/Bai2_FPGA/led7 doan/led7 doan.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/xilinx/Downloads/led7 doan' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 69 MB (+20897kb) [00:00:07]
+// [Engine Memory]: 593 MB (+91643kb) [00:00:07]
+// [GUI Memory]: 75 MB (+2716kb) [00:00:07]
+// [GUI Memory]: 94 MB (+16506kb) [00:00:08]
+// [Engine Memory]: 629 MB (+7655kb) [00:00:08]
+// [GUI Memory]: 105 MB (+7016kb) [00:00:09]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 679 MB. GUI used memory: 39 MB. Current time: 5/27/24 11:07:37 AM ICT
+// [Engine Memory]: 679 MB (+18804kb) [00:00:10]
+// Project name: led7 doan; location: C:/Users/admin/Desktop/Bai2_FPGA/led7 doan; part: xc7a35tfgg484-2L
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (test_led7.v) elapsed time: 0.2s
+// Elapsed time: 1109 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_segment7_led (test_led7.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_segment7_led (test_led7.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_segment7_led (test_led7.v), seg7_inst : segment7 (led_7doan.v)]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_segment7_led (test_led7.v), seg7_inst : segment7 (led_7doan.v)]", 2, false, false, false, false, false, true); // B (D, cj) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 41 MB. Current time: 5/27/24 11:37:37 AM ICT
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 35 MB. Current time: 5/27/24 12:08:15 PM ICT
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 39 MB. Current time: 5/27/24 12:38:18 PM ICT
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 34 MB. Current time: 5/27/24 1:08:21 PM ICT

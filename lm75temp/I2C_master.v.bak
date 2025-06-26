@@ -1,0 +1,9 @@
+// I2C Master
+//Author: Noel A. Rios
+
+module I2C_master(
+		input CLK,
+		inout SDA,
+		inout SCL,
+		output [7:0] reg data
+		);

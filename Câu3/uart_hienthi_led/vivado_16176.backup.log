@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May 27 11:55:07 2024
+# Process ID: 16176
+# Current directory: D:/FPGA thi/Câu3/uart_hienthi_led
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8568 D:\FPGA thi\Câu3\uart_hienthi_led\uart_loopback.xpr
+# Log file: D:/FPGA thi/Câu3/uart_hienthi_led/vivado.log
+# Journal file: D:/FPGA thi/Câu3/uart_hienthi_led\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA thi/Câu3/uart_hienthi_led/uart_loopback.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Admin/Desktop/verilog/uart_hienthi_led' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 870.504 ; gain = 122.684
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtools 27-3366] Cannot support older hw_server version 
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 871.934 ; gain = 0.000
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {D:/FPGA thi/Câu3/uart_hienthi_led/uart_loopback.runs/impl_1/uart_loopback.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {D:/FPGA thi/Câu3/uart_hienthi_led/uart_loopback.runs/impl_1/uart_loopback.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {D:/FPGA thi/Câu3/uart_hienthi_led/uart_loopback.runs/impl_1/uart_loopback.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3403] Dropping logic core with cellname:'u_ila_0' from probes file, since it cannot be found on the programmed device.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA thi/Câu3/uart_hienthi_led/uart_loopback.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon May 27 11:57:19 2024] Launched synth_1...
+Run output will be captured here: D:/FPGA thi/Câu3/uart_hienthi_led/uart_loopback.runs/synth_1/runme.log
+[Mon May 27 11:57:19 2024] Launched impl_1...
+Run output will be captured here: D:/FPGA thi/Câu3/uart_hienthi_led/uart_loopback.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA thi/Câu3/uart_hienthi_led/uart_loopback.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon May 27 11:58:30 2024] Launched synth_1...
+Run output will be captured here: D:/FPGA thi/Câu3/uart_hienthi_led/uart_loopback.runs/synth_1/runme.log
+[Mon May 27 11:58:30 2024] Launched impl_1...
+Run output will be captured here: D:/FPGA thi/Câu3/uart_hienthi_led/uart_loopback.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA thi/Câu3/uart_hienthi_led/uart_loopback.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Mon May 27 11:59:49 2024] Launched synth_1...
+Run output will be captured here: D:/FPGA thi/Câu3/uart_hienthi_led/uart_loopback.runs/synth_1/runme.log

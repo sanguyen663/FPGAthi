@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a15tfgg484-2" LaunchTime="1716793371">
+  <File Type="PA-TCL" Name="parallel_to_serial.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="parallel_to_serial_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="parallel_to_serial_reports.tcl"/>
+  <File Type="RDS-RDS" Name="parallel_to_serial.vds"/>
+  <File Type="RDS-UTIL" Name="parallel_to_serial_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="parallel_to_serial_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="parallel_to_serial.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="parallel_to_serial_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="parallel_to_serial_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/parallel_to_serial.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="parallel_to_serial"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

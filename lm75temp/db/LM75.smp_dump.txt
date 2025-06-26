@@ -1,0 +1,86 @@
+
+State Machine - |LM75|LED_pos
+Name LED_pos.00011 LED_pos.00010 LED_pos.00001 LED_pos.00000 LED_pos.00100 
+LED_pos.00000 0 0 0 0 0 
+LED_pos.00001 0 0 1 1 0 
+LED_pos.00010 0 1 0 1 0 
+LED_pos.00011 1 0 0 1 0 
+LED_pos.00100 0 0 0 1 1 
+
+State Machine - |LM75|I2C_master:I2C|wstate
+Name wstate.000000000 wstate.000000010 wstate.000000001 
+wstate.000000000 0 0 0 
+wstate.000000001 1 0 1 
+wstate.000000010 1 1 0 
+
+State Machine - |LM75|I2C_master:I2C|state_shift
+Name state_shift.000000011 state_shift.000000010 state_shift.000000001 state_shift.000000000 state_shift.000000100 
+state_shift.000000000 0 0 0 0 0 
+state_shift.000000001 0 0 1 1 0 
+state_shift.000000010 0 1 0 1 0 
+state_shift.000000011 1 0 0 1 0 
+state_shift.000000100 0 0 0 1 1 
+
+State Machine - |LM75|I2C_master:I2C|state_write
+Name state_write.000001001 state_write.000001000 state_write.000000111 state_write.000000110 state_write.000000101 state_write.000000100 state_write.000000011 state_write.000000010 state_write.000000001 state_write.000000000 
+state_write.000000000 0 0 0 0 0 0 0 0 0 0 
+state_write.000000001 0 0 0 0 0 0 0 0 1 1 
+state_write.000000010 0 0 0 0 0 0 0 1 0 1 
+state_write.000000011 0 0 0 0 0 0 1 0 0 1 
+state_write.000000100 0 0 0 0 0 1 0 0 0 1 
+state_write.000000101 0 0 0 0 1 0 0 0 0 1 
+state_write.000000110 0 0 0 1 0 0 0 0 0 1 
+state_write.000000111 0 0 1 0 0 0 0 0 0 1 
+state_write.000001000 0 1 0 0 0 0 0 0 0 1 
+state_write.000001001 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |LM75|I2C_master:I2C|state_read
+Name state_read.000000111 state_read.000000110 state_read.000000101 state_read.000000100 state_read.000000011 state_read.000000010 state_read.000000001 state_read.000000000 state_read.000001000 
+state_read.000000000 0 0 0 0 0 0 0 0 0 
+state_read.000000001 0 0 0 0 0 0 1 1 0 
+state_read.000000010 0 0 0 0 0 1 0 1 0 
+state_read.000000011 0 0 0 0 1 0 0 1 0 
+state_read.000000100 0 0 0 1 0 0 0 1 0 
+state_read.000000101 0 0 1 0 0 0 0 1 0 
+state_read.000000110 0 1 0 0 0 0 0 1 0 
+state_read.000000111 1 0 0 0 0 0 0 1 0 
+state_read.000001000 0 0 0 0 0 0 0 1 1 
+
+State Machine - |LM75|I2C_master:I2C|state_no_ack
+Name state_no_ack.000000000 state_no_ack.000000010 state_no_ack.000000001 
+state_no_ack.000000000 0 0 0 
+state_no_ack.000000001 1 0 1 
+state_no_ack.000000010 1 1 0 
+
+State Machine - |LM75|I2C_master:I2C|state_ack
+Name state_ack.000000000 state_ack.000000010 state_ack.000000001 
+state_ack.000000000 0 0 0 
+state_ack.000000001 1 0 1 
+state_ack.000000010 1 1 0 
+
+State Machine - |LM75|I2C_master:I2C|state_stop
+Name state_stop.000000011 state_stop.000000010 state_stop.000000001 state_stop.000000000 
+state_stop.000000000 0 0 0 0 
+state_stop.000000001 0 0 1 1 
+state_stop.000000010 0 1 0 1 
+state_stop.000000011 1 0 0 1 
+
+State Machine - |LM75|I2C_master:I2C|state_start
+Name state_start.000000011 state_start.000000010 state_start.000000001 state_start.000000000 
+state_start.000000000 0 0 0 0 
+state_start.000000001 0 0 1 1 
+state_start.000000010 0 1 0 1 
+state_start.000000011 1 0 0 1 
+
+State Machine - |LM75|I2C_master:I2C|state
+Name state.000001001 state.000001000 state.000000111 state.000000110 state.000000101 state.000000100 state.000000011 state.000000010 state.000000001 state.000000000 
+state.000000000 0 0 0 0 0 0 0 0 0 0 
+state.000000001 0 0 0 0 0 0 0 0 1 1 
+state.000000010 0 0 0 0 0 0 0 1 0 1 
+state.000000011 0 0 0 0 0 0 1 0 0 1 
+state.000000100 0 0 0 0 0 1 0 0 0 1 
+state.000000101 0 0 0 0 1 0 0 0 0 1 
+state.000000110 0 0 0 1 0 0 0 0 0 1 
+state.000000111 0 0 1 0 0 0 0 0 0 1 
+state.000001000 0 1 0 0 0 0 0 0 0 1 
+state.000001001 1 0 0 0 0 0 0 0 0 1 

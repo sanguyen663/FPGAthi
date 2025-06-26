@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Apr 25 13:44:18 2024
+# Process ID: 25832
+# Current directory: C:/Users/Admin/Desktop/verilog/uart
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22884 C:\Users\Admin\Desktop\verilog\uart\uart_loopback.xpr
+# Log file: C:/Users/Admin/Desktop/verilog/uart/vivado.log
+# Journal file: C:/Users/Admin/Desktop/verilog/uart\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Admin/Desktop/verilog/uart/uart_loopback.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1

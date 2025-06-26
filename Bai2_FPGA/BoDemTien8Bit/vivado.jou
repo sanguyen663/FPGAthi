@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May 27 15:50:27 2024
+# Process ID: 41940
+# Current directory: C:/Users/admin/Desktop/Bai2_FPGA/BoDemTien8Bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31040 C:\Users\admin\Desktop\Bai2_FPGA\BoDemTien8Bit\BoDemTien8Bit.xpr
+# Log file: C:/Users/admin/Desktop/Bai2_FPGA/BoDemTien8Bit/vivado.log
+# Journal file: C:/Users/admin/Desktop/Bai2_FPGA/BoDemTien8Bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/admin/Desktop/Bai2_FPGA/BoDemTien8Bit/BoDemTien8Bit.xpr
+update_compile_order -fileset sources_1

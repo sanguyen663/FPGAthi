@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May 27 10:32:09 2024
+# Process ID: 20092
+# Current directory: C:/xilinx/Downloads/serial_to_parallel/serial_to_parallel.runs/synth_1
+# Command line: vivado.exe -log parallel_to_serial.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source parallel_to_serial.tcl
+# Log file: C:/xilinx/Downloads/serial_to_parallel/serial_to_parallel.runs/synth_1/parallel_to_serial.vds
+# Journal file: C:/xilinx/Downloads/serial_to_parallel/serial_to_parallel.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source parallel_to_serial.tcl -notrace

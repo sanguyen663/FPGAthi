@@ -1,0 +1,38 @@
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+# File: D:\decimal\output_files\decimal.csv
+# Generated on: Sun Jul 17 10:14:16 2022
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+CLK,Input,PIN_23,1,B1_N0,PIN_23,,,,,
+DIGIT[3],Output,PIN_137,8,B8_N0,PIN_137,,,,,
+DIGIT[2],Output,PIN_136,8,B8_N0,PIN_136,,,,,
+DIGIT[1],Output,PIN_135,8,B8_N0,PIN_135,,,,,
+DIGIT[0],Output,PIN_133,8,B8_N0,PIN_133,,,,,
+LED1,Output,PIN_87,5,B5_N0,PIN_87,,,,,
+LED2,Output,PIN_86,5,B5_N0,PIN_86,,,,,
+LED3,Output,PIN_85,5,B5_N0,PIN_85,,,,,
+LED4,Output,PIN_84,5,B5_N0,PIN_84,,,,,
+SEG[7],Output,PIN_127,7,B7_N0,PIN_127,,,,,
+SEG[6],Output,PIN_124,7,B7_N0,PIN_124,,,,,
+SEG[5],Output,PIN_126,7,B7_N0,PIN_126,,,,,
+SEG[4],Output,PIN_132,8,B8_N0,PIN_132,,,,,
+SEG[3],Output,PIN_129,8,B8_N0,PIN_129,,,,,
+SEG[2],Output,PIN_125,7,B7_N0,PIN_125,,,,,
+SEG[1],Output,PIN_121,7,B7_N0,PIN_121,,,,,
+SEG[0],Output,PIN_128,8,B8_N0,PIN_128,,,,,

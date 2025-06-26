@@ -1,0 +1,7 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto e58edc3f949848a7806e644f627f8ae8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ser2par_tb_behav xil_defaultlib.ser2par_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <parallel_to_serial> not found while processing module instance <par2ser_inst> [C:/Users/admin/Desktop/serial_to_parallel/serial_to_parallel.srcs/sim_1/new/tb_serial_to_parallel.v:72]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

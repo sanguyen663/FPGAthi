@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May 27 11:34:26 2024
+# Process ID: 19408
+# Current directory: D:/FPGA thi/Cu3/Sine_Rom/Sine_Rom.runs/synth_1
+# Command line: vivado.exe -log sine_wave.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sine_wave.tcl
+# Log file: D:/FPGA thi/Cu3/Sine_Rom/Sine_Rom.runs/synth_1/sine_wave.vds
+# Journal file: D:/FPGA thi/Cu3/Sine_Rom/Sine_Rom.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sine_wave.tcl -notrace

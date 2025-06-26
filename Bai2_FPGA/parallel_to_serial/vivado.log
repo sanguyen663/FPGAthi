@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May 27 11:43:18 2024
+# Process ID: 4640
+# Current directory: C:/Users/admin/Desktop/parallel_to_serial
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29928 C:\Users\admin\Desktop\parallel_to_serial\parallel_to_serial.xpr
+# Log file: C:/Users/admin/Desktop/parallel_to_serial/vivado.log
+# Journal file: C:/Users/admin/Desktop/parallel_to_serial\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/admin/Desktop/parallel_to_serial/parallel_to_serial.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Admin/Desktop/verilog/parallel_to_serial' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon May 27 11:43:42 2024] Launched impl_1...
+Run output will be captured here: C:/Users/admin/Desktop/parallel_to_serial/parallel_to_serial.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+2. Failed to delete one or more files in run directory C:/Users/admin/Desktop/parallel_to_serial/parallel_to_serial.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Mon May 27 11:43:52 2024] Launched synth_1...
+Run output will be captured here: C:/Users/admin/Desktop/parallel_to_serial/parallel_to_serial.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon May 27 11:50:09 2024] Launched impl_1...
+Run output will be captured here: C:/Users/admin/Desktop/parallel_to_serial/parallel_to_serial.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/parallel_to_serial/parallel_to_serial.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'par2ser_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/parallel_to_serial/parallel_to_serial.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj par2ser_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/parallel_to_serial/parallel_to_serial.srcs/sources_1/new/parallel_to_serial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module parallel_to_serial
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/parallel_to_serial/parallel_to_serial.srcs/sim_1/new/parallel_to_serial_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module par2ser_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/parallel_to_serial/parallel_to_serial.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/parallel_to_serial/parallel_to_serial.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 8200f5e99e954e48808e5ad355a75cb8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot par2ser_tb_behav xil_defaultlib.par2ser_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/parallel_to_serial/parallel_to_serial.srcs/sources_1/new/parallel_to_serial.v" Line 1. Module parallel_to_serial doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.parallel_to_serial
+Compiling module xil_defaultlib.par2ser_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot par2ser_tb_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/admin/Desktop/parallel_to_serial/parallel_to_serial.sim/sim_1/behav/xsim/xsim.dir/par2ser_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 27 12:08:30 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/admin/Desktop/parallel_to_serial/parallel_to_serial.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "par2ser_tb_behav -key {Behavioral:sim_1:Functional:par2ser_tb} -tclbatch {par2ser_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source par2ser_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'par2ser_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 878.027 ; gain = 11.238
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 27 12:10:12 2024...

@@ -1,0 +1,108 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: ACCESS Inc.
+// Engineer: Noel A. Rios
+// 
+// Create Date:    11:07:50 07/04/2022 
+// Design Name: 
+// Module Name:    Delay_test 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module Delay_test(
+    input CLK,
+    output reg LED1,
+    output reg LED2,
+    output reg LED3,
+    output reg LED4,
+    output [7:0] SEG,
+    output [3:0] DIGIT
+    	 );
+
+reg [26:0] delay=0;
+reg LED_status=1;
+reg [3:0] LED_pos=1;
+reg [3:0] units= 0;
+reg [3:0] tens = 0;
+reg [3:0] hundreds = 0;
+reg [8:0] number1;
+reg [8:0] number2;
+reg [8:0] remainder;
+
+reg [15:0] result;
+
+display_7_seg display(.CLK (CLK), 
+		.units (units), .tens (tens), .hundreds (hundreds),
+		.SEG (SEG), .DIGIT (DIGIT));
+
+
+
+always@(posedge CLK)
+begin
+
+//	number1=70;
+//	number2=9;
+	
+//	result=number1/number2;
+//	remainder=number1 % number2;
+	
+//	hundreds=(result/100)%10;
+// tens=(result/10)%10; 
+//	units=(result%10);
+
+//	hundreds=(result/10)%10; 
+//	tens=(result%10);
+//	units=remainder%10;
+
+	hundreds=0;
+	tens=0;
+	units=0;
+	
+	if(delay<=26'd50000000)
+		begin
+		delay=delay+1;
+		end
+		else
+			begin
+			case (LED_pos)
+			1:	begin
+				LED_status<=LED_status;
+				LED1<=LED_status;
+				LED_pos=2;
+				delay=0;
+				end
+			2:	begin
+				LED_status<=LED_status;
+				LED2<=LED_status;
+				LED_pos=3;
+				delay=0;
+				end
+			3:	begin
+				LED_status<=LED_status;
+				LED3<=LED_status;
+				LED_pos=4;
+				delay=0;
+				end
+			4:	begin
+				LED_status<=LED_status;
+				LED4<=LED_status;
+				LED_pos=1;
+				delay=0;
+				end
+			
+			endcase 
+			
+			end
+			
+end
+
+endmodule

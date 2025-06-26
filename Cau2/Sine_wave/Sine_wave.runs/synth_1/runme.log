@@ -1,0 +1,334 @@
+
+*** Running vivado
+    with args -log sine_wave.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sine_wave.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source sine_wave.tcl -notrace
+Command: synth_design -top sine_wave -part xc7a35tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 34556 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 426.316 ; gain = 96.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sine_wave' [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/sources_1/new/topmodule.v:3]
+INFO: [Synth 8-638] synthesizing module 'Clock_divider' [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/sources_1/new/chia_clk.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Clock_divider' (1#1) [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/sources_1/new/chia_clk.v:1]
+INFO: [Synth 8-638] synthesizing module 'sine_rom' [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/sources_1/new/sine_rom.v:7]
+INFO: [Synth 8-256] done synthesizing module 'sine_rom' (2#1) [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/sources_1/new/sine_rom.v:7]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/sources_1/new/topmodule.v:37]
+INFO: [Synth 8-638] synthesizing module 'ila_0' [C:/xilinx/Downloads/Sine_wave/Sine_wave.runs/synth_1/.Xil/Vivado-20144-LAPTOP-HQ21H1CR/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ila_0' (3#1) [C:/xilinx/Downloads/Sine_wave/Sine_wave.runs/synth_1/.Xil/Vivado-20144-LAPTOP-HQ21H1CR/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'sine_rom_inst'. This will prevent further optimization [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/sources_1/new/topmodule.v:30]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila'. This will prevent further optimization [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/sources_1/new/topmodule.v:37]
+INFO: [Synth 8-256] done synthesizing module 'sine_wave' (4#1) [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/sources_1/new/topmodule.v:3]
+WARNING: [Synth 8-3331] design sine_rom has unconnected port read_en
+WARNING: [Synth 8-3331] design sine_rom has unconnected port ce
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 478.180 ; gain = 148.293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 478.180 ; gain = 148.293
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/xilinx/Downloads/Sine_wave/Sine_wave.runs/synth_1/.Xil/Vivado-20144-LAPTOP-HQ21H1CR/dcp1/ila_0_in_context.xdc] for cell 'ila'
+Finished Parsing XDC File [C:/xilinx/Downloads/Sine_wave/Sine_wave.runs/synth_1/.Xil/Vivado-20144-LAPTOP-HQ21H1CR/dcp1/ila_0_in_context.xdc] for cell 'ila'
+Parsing XDC File [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/constrs_1/new/cosnt.xdc]
+Finished Parsing XDC File [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/constrs_1/new/cosnt.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/constrs_1/new/cosnt.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sine_wave_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sine_wave_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 819.023 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 819.023 ; gain = 489.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 819.023 ; gain = 489.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ila. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 819.023 ; gain = 489.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/sources_1/new/chia_clk.v:60]
+INFO: [Synth 8-5545] ROM "DIVISOR" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/sources_1/new/chia_clk.v:13]
+WARNING: [Synth 8-6014] Unused sequential element DIVISOR_reg was removed.  [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/sources_1/new/chia_clk.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 819.023 ; gain = 489.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sine_wave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module Clock_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 2     
++---Registers : 
+	               26 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk_div_inst/DIVISOR" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element clk_div_inst/DIVISOR_reg was removed.  [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/sources_1/new/chia_clk.v:58]
+WARNING: [Synth 8-6014] Unused sequential element clk_div_inst/counter_reg was removed.  [C:/xilinx/Downloads/Sine_wave/Sine_wave.srcs/sources_1/new/chia_clk.v:13]
+WARNING: [Synth 8-3331] design sine_rom has unconnected port read_en
+WARNING: [Synth 8-3331] design sine_rom has unconnected port ce
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 819.023 ; gain = 489.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|sine_rom    | data       | 32x8          | LUT            | 
+|sine_rom    | data       | 32x8          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 819.023 ; gain = 489.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 834.395 ; gain = 504.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 835.684 ; gain = 505.797
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 835.684 ; gain = 505.797
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 835.684 ; gain = 505.797
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 835.684 ; gain = 505.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 835.684 ; gain = 505.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 835.684 ; gain = 505.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 835.684 ; gain = 505.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |ila_0  |     1|
+|2     |BUFG   |     1|
+|3     |CARRY4 |    43|
+|4     |LUT1   |    31|
+|5     |LUT2   |    29|
+|6     |LUT3   |    81|
+|7     |LUT4   |    66|
+|8     |LUT5   |    12|
+|9     |LUT6   |     2|
+|10    |FDCE   |     5|
+|11    |FDRE   |   108|
+|12    |FDSE   |     1|
+|13    |IBUF   |     4|
+|14    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+--------------+------+
+|      |Instance        |Module        |Cells |
++------+----------------+--------------+------+
+|1     |top             |              |   391|
+|2     |  sine_rom_inst |sine_rom      |     8|
+|3     |  clk_div_inst  |Clock_divider |   360|
++------+----------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 835.684 ; gain = 505.797
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 835.684 ; gain = 164.953
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 835.684 ; gain = 505.797
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 835.684 ; gain = 507.574
+INFO: [Common 17-1381] The checkpoint 'C:/xilinx/Downloads/Sine_wave/Sine_wave.runs/synth_1/sine_wave.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sine_wave_utilization_synth.rpt -pb sine_wave_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 835.684 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May 27 00:08:04 2024...

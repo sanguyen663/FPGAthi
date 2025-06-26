@@ -1,0 +1,730 @@
+Analysis & Synthesis report for Delay_test
+Mon Jul 18 19:12:41 2022
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Delay_test|LED_pos
+  9. State Machine - |Delay_test|timer2_flag
+ 10. State Machine - |Delay_test|I2C_master:I2C|state_stop
+ 11. State Machine - |Delay_test|I2C_master:I2C|state_no_ack
+ 12. State Machine - |Delay_test|I2C_master:I2C|state
+ 13. State Machine - |Delay_test|I2C_master:I2C|timer2_flag
+ 14. State Machine - |Delay_test|I2C_master:I2C|state_ack
+ 15. State Machine - |Delay_test|I2C_master:I2C|state_clock
+ 16. State Machine - |Delay_test|I2C_master:I2C|timer1_flag
+ 17. State Machine - |Delay_test|I2C_master:I2C|state_start
+ 18. State Machine - |Delay_test|I2C_master:I2C|timer3_flag
+ 19. Registers Removed During Synthesis
+ 20. Removed Registers Triggering Further Register Optimizations
+ 21. General Register Statistics
+ 22. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 23. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
+ 24. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 25. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
+ 26. Port Connectivity Checks: "I2C_master:I2C"
+ 27. Port Connectivity Checks: "display_7_seg:display|decoder_7_seg:decoder"
+ 28. Port Connectivity Checks: "display_7_seg:display"
+ 29. Elapsed Time Per Partition
+ 30. Analysis & Synthesis Messages
+ 31. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Jul 18 19:12:41 2022      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; Delay_test                                 ;
+; Top-level Entity Name              ; Delay_test                                 ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; 597                                        ;
+;     Total combinational functions  ; 574                                        ;
+;     Dedicated logic registers      ; 197                                        ;
+; Total registers                    ; 197                                        ;
+; Total pins                         ; 20                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE6E22C6        ;                    ;
+; Top-level entity name                                                      ; Delay_test         ; Delay_test         ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Type of Retiming Performed During Resynthesis                              ; Full               ;                    ;
+; Resynthesis Optimization Effort                                            ; Normal             ;                    ;
+; Physical Synthesis Level for Resynthesis                                   ; Normal             ;                    ;
+; Use Generated Physical Constraints File                                    ; On                 ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
+; I2C_master.v                     ; yes             ; User Verilog HDL File        ; D:/decimal/I2C_master.v                                            ;         ;
+; decoder_7_seg.v                  ; yes             ; User Verilog HDL File        ; D:/decimal/decoder_7_seg.v                                         ;         ;
+; display_7_seg.v                  ; yes             ; User Verilog HDL File        ; D:/decimal/display_7_seg.v                                         ;         ;
+; Delay_test.v                     ; yes             ; User Verilog HDL File        ; D:/decimal/Delay_test.v                                            ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera/13.0/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera/13.0/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera/13.0/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0/quartus/libraries/megafunctions/aglobal130.inc      ;         ;
+; db/lpm_divide_m9m.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/decimal/db/lpm_divide_m9m.tdf                                   ;         ;
+; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction  ; D:/decimal/db/sign_div_unsign_bkh.tdf                              ;         ;
+; db/alt_u_div_a4f.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/decimal/db/alt_u_div_a4f.tdf                                    ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/decimal/db/add_sub_7pc.tdf                                      ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/decimal/db/add_sub_8pc.tdf                                      ;         ;
+; db/lpm_divide_jhm.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/decimal/db/lpm_divide_jhm.tdf                                   ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 597       ;
+;                                             ;           ;
+; Total combinational functions               ; 574       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 168       ;
+;     -- 3 input functions                    ; 73        ;
+;     -- <=2 input functions                  ; 333       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 260       ;
+;     -- arithmetic mode                      ; 314       ;
+;                                             ;           ;
+; Total registers                             ; 197       ;
+;     -- Dedicated logic registers            ; 197       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 20        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 197       ;
+; Total fan-out                               ; 2031      ;
+; Average fan-out                             ; 2.50      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                             ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                         ; Library Name ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
+; |Delay_test                            ; 574 (58)          ; 197 (45)     ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |Delay_test                                                                                                 ;              ;
+;    |I2C_master:I2C|                    ; 452 (452)         ; 110 (110)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Delay_test|I2C_master:I2C                                                                                  ;              ;
+;    |display_7_seg:display|             ; 57 (48)           ; 42 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Delay_test|display_7_seg:display                                                                           ;              ;
+;       |decoder_7_seg:decoder|          ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Delay_test|display_7_seg:display|decoder_7_seg:decoder                                                     ;              ;
+;    |lpm_divide:Mod1|                   ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Delay_test|lpm_divide:Mod1                                                                                 ;              ;
+;       |lpm_divide_m9m:auto_generated|  ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Delay_test|lpm_divide:Mod1|lpm_divide_m9m:auto_generated                                                   ;              ;
+;          |sign_div_unsign_bkh:divider| ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Delay_test|lpm_divide:Mod1|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider                       ;              ;
+;             |alt_u_div_a4f:divider|    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Delay_test|lpm_divide:Mod1|lpm_divide_m9m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_a4f:divider ;              ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------+
+; State Machine - |Delay_test|LED_pos                                                           ;
++---------------+---------------+---------------+---------------+---------------+---------------+
+; Name          ; LED_pos.00011 ; LED_pos.00010 ; LED_pos.00001 ; LED_pos.00000 ; LED_pos.00100 ;
++---------------+---------------+---------------+---------------+---------------+---------------+
+; LED_pos.00000 ; 0             ; 0             ; 0             ; 0             ; 0             ;
+; LED_pos.00001 ; 0             ; 0             ; 1             ; 1             ; 0             ;
+; LED_pos.00010 ; 0             ; 1             ; 0             ; 1             ; 0             ;
+; LED_pos.00011 ; 1             ; 0             ; 0             ; 1             ; 0             ;
+; LED_pos.00100 ; 0             ; 0             ; 0             ; 1             ; 1             ;
++---------------+---------------+---------------+---------------+---------------+---------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------+
+; State Machine - |Delay_test|timer2_flag ;
++----------------+------------------------+
+; Name           ; timer2_flag.01         ;
++----------------+------------------------+
+; timer2_flag.00 ; 0                      ;
+; timer2_flag.01 ; 1                      ;
++----------------+------------------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Delay_test|I2C_master:I2C|state_stop                                                            ;
++----------------------+----------------------+----------------------+----------------------+----------------------+
+; Name                 ; state_stop.000000011 ; state_stop.000000010 ; state_stop.000000001 ; state_stop.000000000 ;
++----------------------+----------------------+----------------------+----------------------+----------------------+
+; state_stop.000000000 ; 0                    ; 0                    ; 0                    ; 0                    ;
+; state_stop.000000001 ; 0                    ; 0                    ; 1                    ; 1                    ;
+; state_stop.000000010 ; 0                    ; 1                    ; 0                    ; 1                    ;
+; state_stop.000000011 ; 1                    ; 0                    ; 0                    ; 1                    ;
++----------------------+----------------------+----------------------+----------------------+----------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |Delay_test|I2C_master:I2C|state_no_ack                                           ;
++------------------------+------------------------+------------------------+------------------------+
+; Name                   ; state_no_ack.000000000 ; state_no_ack.000000010 ; state_no_ack.000000001 ;
++------------------------+------------------------+------------------------+------------------------+
+; state_no_ack.000000000 ; 0                      ; 0                      ; 0                      ;
+; state_no_ack.000000001 ; 1                      ; 0                      ; 1                      ;
+; state_no_ack.000000010 ; 1                      ; 1                      ; 0                      ;
++------------------------+------------------------+------------------------+------------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Delay_test|I2C_master:I2C|state                                                                                                                                                                                                                                                                ;
++-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+
+; Name            ; state.000001111 ; state.000001110 ; state.000001101 ; state.000001100 ; state.000001011 ; state.000001010 ; state.000001001 ; state.000001000 ; state.000000111 ; state.000000110 ; state.000000101 ; state.000000100 ; state.000000011 ; state.000000010 ; state.000000001 ; state.000000000 ;
++-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+
+; state.000000000 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ;
+; state.000000001 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 1               ;
+; state.000000010 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 1               ;
+; state.000000011 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 1               ;
+; state.000000100 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 1               ;
+; state.000000101 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; state.000000110 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; state.000000111 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; state.000001000 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; state.000001001 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; state.000001010 ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; state.000001011 ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; state.000001100 ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; state.000001101 ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; state.000001110 ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; state.000001111 ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
++-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------+
+; State Machine - |Delay_test|I2C_master:I2C|timer2_flag ;
++----------------+---------------------------------------+
+; Name           ; timer2_flag.01                        ;
++----------------+---------------------------------------+
+; timer2_flag.00 ; 0                                     ;
+; timer2_flag.01 ; 1                                     ;
++----------------+---------------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------+
+; State Machine - |Delay_test|I2C_master:I2C|state_ack                                  ;
++---------------------+---------------------+---------------------+---------------------+
+; Name                ; state_ack.000000000 ; state_ack.000000010 ; state_ack.000000001 ;
++---------------------+---------------------+---------------------+---------------------+
+; state_ack.000000000 ; 0                   ; 0                   ; 0                   ;
+; state_ack.000000001 ; 1                   ; 0                   ; 1                   ;
+; state_ack.000000010 ; 1                   ; 1                   ; 0                   ;
++---------------------+---------------------+---------------------+---------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------+
+; State Machine - |Delay_test|I2C_master:I2C|state_clock ;
++-----------------------+--------------------------------+
+; Name                  ; state_clock.000000001          ;
++-----------------------+--------------------------------+
+; state_clock.000000000 ; 0                              ;
+; state_clock.000000001 ; 1                              ;
++-----------------------+--------------------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------+
+; State Machine - |Delay_test|I2C_master:I2C|timer1_flag ;
++----------------+---------------------------------------+
+; Name           ; timer1_flag.01                        ;
++----------------+---------------------------------------+
+; timer1_flag.00 ; 0                                     ;
+; timer1_flag.01 ; 1                                     ;
++----------------+---------------------------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Delay_test|I2C_master:I2C|state_start                                                                ;
++-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+
+; Name                  ; state_start.000000011 ; state_start.000000010 ; state_start.000000001 ; state_start.000000000 ;
++-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+
+; state_start.000000000 ; 0                     ; 0                     ; 0                     ; 0                     ;
+; state_start.000000001 ; 0                     ; 0                     ; 1                     ; 1                     ;
+; state_start.000000010 ; 0                     ; 1                     ; 0                     ; 1                     ;
+; state_start.000000011 ; 1                     ; 0                     ; 0                     ; 1                     ;
++-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------+
+; State Machine - |Delay_test|I2C_master:I2C|timer3_flag ;
++----------------+---------------------------------------+
+; Name           ; timer3_flag.01                        ;
++----------------+---------------------------------------+
+; timer3_flag.00 ; 0                                     ;
+; timer3_flag.01 ; 1                                     ;
++----------------+---------------------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                        ;
++----------------------------------------+--------------------------------------------------+
+; Register name                          ; Reason for Removal                               ;
++----------------------------------------+--------------------------------------------------+
+; thousands[0..4]                        ; Stuck at GND due to stuck port data_in           ;
+; units[0..4]                            ; Stuck at GND due to stuck port data_in           ;
+; tens[4]                                ; Stuck at GND due to stuck port data_in           ;
+; hundreds[4]                            ; Stuck at GND due to stuck port data_in           ;
+; I2C_master:I2C|data[3]                 ; Stuck at GND due to stuck port data_in           ;
+; I2C_master:I2C|counter[0..8]           ; Stuck at GND due to stuck port data_in           ;
+; display_7_seg:display|digit_posn[2..4] ; Stuck at GND due to stuck port data_in           ;
+; display_7_seg:display|digit_data[4]    ; Stuck at GND due to stuck port data_in           ;
+; I2C_master:I2C|data[4]                 ; Merged with I2C_master:I2C|data[7]               ;
+; I2C_master:I2C|data[2]                 ; Merged with I2C_master:I2C|data[6]               ;
+; I2C_master:I2C|data[1]                 ; Merged with I2C_master:I2C|data[5]               ;
+; I2C_master:I2C|data[7]                 ; Stuck at GND due to stuck port data_in           ;
+; LED_pos~3                              ; Lost fanout                                      ;
+; LED_pos~4                              ; Lost fanout                                      ;
+; LED_pos~6                              ; Lost fanout                                      ;
+; LED_pos~7                              ; Lost fanout                                      ;
+; timer2_flag~3                          ; Lost fanout                                      ;
+; I2C_master:I2C|state_stop~2            ; Lost fanout                                      ;
+; I2C_master:I2C|state_stop~3            ; Lost fanout                                      ;
+; I2C_master:I2C|state_stop~4            ; Lost fanout                                      ;
+; I2C_master:I2C|state_stop~5            ; Lost fanout                                      ;
+; I2C_master:I2C|state_stop~6            ; Lost fanout                                      ;
+; I2C_master:I2C|state_stop~7            ; Lost fanout                                      ;
+; I2C_master:I2C|state_stop~8            ; Lost fanout                                      ;
+; I2C_master:I2C|state_stop~9            ; Lost fanout                                      ;
+; I2C_master:I2C|state_stop~10           ; Lost fanout                                      ;
+; I2C_master:I2C|state_no_ack~4          ; Lost fanout                                      ;
+; I2C_master:I2C|state_no_ack~5          ; Lost fanout                                      ;
+; I2C_master:I2C|state_no_ack~6          ; Lost fanout                                      ;
+; I2C_master:I2C|state_no_ack~7          ; Lost fanout                                      ;
+; I2C_master:I2C|state_no_ack~8          ; Lost fanout                                      ;
+; I2C_master:I2C|state_no_ack~9          ; Lost fanout                                      ;
+; I2C_master:I2C|state_no_ack~10         ; Lost fanout                                      ;
+; I2C_master:I2C|state~2                 ; Lost fanout                                      ;
+; I2C_master:I2C|state~3                 ; Lost fanout                                      ;
+; I2C_master:I2C|state~4                 ; Lost fanout                                      ;
+; I2C_master:I2C|state~5                 ; Lost fanout                                      ;
+; I2C_master:I2C|state~6                 ; Lost fanout                                      ;
+; I2C_master:I2C|state~7                 ; Lost fanout                                      ;
+; I2C_master:I2C|state~8                 ; Lost fanout                                      ;
+; I2C_master:I2C|state~9                 ; Lost fanout                                      ;
+; I2C_master:I2C|state~10                ; Lost fanout                                      ;
+; I2C_master:I2C|timer2_flag~5           ; Lost fanout                                      ;
+; I2C_master:I2C|state_ack~4             ; Lost fanout                                      ;
+; I2C_master:I2C|state_ack~5             ; Lost fanout                                      ;
+; I2C_master:I2C|state_ack~6             ; Lost fanout                                      ;
+; I2C_master:I2C|state_ack~7             ; Lost fanout                                      ;
+; I2C_master:I2C|state_ack~8             ; Lost fanout                                      ;
+; I2C_master:I2C|state_ack~9             ; Lost fanout                                      ;
+; I2C_master:I2C|state_ack~10            ; Lost fanout                                      ;
+; I2C_master:I2C|state_clock~5           ; Lost fanout                                      ;
+; I2C_master:I2C|state_clock~6           ; Lost fanout                                      ;
+; I2C_master:I2C|state_clock~7           ; Lost fanout                                      ;
+; I2C_master:I2C|state_clock~8           ; Lost fanout                                      ;
+; I2C_master:I2C|state_clock~9           ; Lost fanout                                      ;
+; I2C_master:I2C|state_clock~10          ; Lost fanout                                      ;
+; I2C_master:I2C|state_clock~11          ; Lost fanout                                      ;
+; I2C_master:I2C|state_clock~12          ; Lost fanout                                      ;
+; I2C_master:I2C|timer1_flag~3           ; Lost fanout                                      ;
+; I2C_master:I2C|state_start~2           ; Lost fanout                                      ;
+; I2C_master:I2C|state_start~3           ; Lost fanout                                      ;
+; I2C_master:I2C|state_start~4           ; Lost fanout                                      ;
+; I2C_master:I2C|state_start~5           ; Lost fanout                                      ;
+; I2C_master:I2C|state_start~6           ; Lost fanout                                      ;
+; I2C_master:I2C|state_start~7           ; Lost fanout                                      ;
+; I2C_master:I2C|state_start~8           ; Lost fanout                                      ;
+; I2C_master:I2C|state_start~9           ; Lost fanout                                      ;
+; I2C_master:I2C|state_start~10          ; Lost fanout                                      ;
+; I2C_master:I2C|timer3_flag~3           ; Lost fanout                                      ;
+; I2C_master:I2C|state_stop.000000001    ; Merged with I2C_master:I2C|state_start.000000001 ;
+; I2C_master:I2C|state_stop.000000010    ; Merged with I2C_master:I2C|state_start.000000010 ;
+; I2C_master:I2C|state_stop.000000000    ; Merged with I2C_master:I2C|state_start.000000000 ;
+; I2C_master:I2C|state_no_ack.000000000  ; Merged with I2C_master:I2C|state_ack.000000000   ;
+; I2C_master:I2C|state_no_ack.000000001  ; Merged with I2C_master:I2C|state_ack.000000001   ;
+; I2C_master:I2C|state_stop.000000011    ; Merged with I2C_master:I2C|state_start.000000011 ;
+; I2C_master:I2C|state_no_ack.000000010  ; Merged with I2C_master:I2C|state_ack.000000010   ;
+; I2C_master:I2C|timer1_reg[0]           ; Merged with timer2_reg[0]                        ;
+; I2C_master:I2C|timer3_reg[0]           ; Merged with timer2_reg[0]                        ;
+; I2C_master:I2C|data[5]                 ; Merged with I2C_master:I2C|data[6]               ;
+; hundreds[3]                            ; Stuck at GND due to stuck port data_in           ;
+; Total Number of Removed Registers = 98 ;                                                  ;
++----------------------------------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                    ;
++---------------------------+---------------------------+----------------------------------------+
+; Register name             ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------------------+---------------------------+----------------------------------------+
+; thousands[4]              ; Stuck at GND              ; display_7_seg:display|digit_data[4]    ;
+;                           ; due to stuck port data_in ;                                        ;
+; I2C_master:I2C|data[3]    ; Stuck at GND              ; hundreds[3]                            ;
+;                           ; due to stuck port data_in ;                                        ;
+; I2C_master:I2C|counter[0] ; Stuck at GND              ; I2C_master:I2C|data[7]                 ;
+;                           ; due to stuck port data_in ;                                        ;
++---------------------------+---------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 197   ;
+; Number of registers using Synchronous Clear  ; 1     ;
+; Number of registers using Synchronous Load   ; 2     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 65    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; 3:1                ; 27 bits   ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; Yes        ; |Delay_test|I2C_master:I2C|timer2_reg[13] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Delay_test|I2C_master:I2C|SCL            ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Delay_test|I2C_master:I2C|SCL            ;
+; 4:1                ; 27 bits   ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; No         ; |Delay_test|I2C_master:I2C|timer2_reg     ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |Delay_test|I2C_master:I2C|timer2_flag    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_m9m ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_jhm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_m9m ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "I2C_master:I2C"                                                                                                                                                                ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                                                 ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data        ; Output ; Warning  ; Output or bidir port (11 bits) is smaller than the port expression (16 bits) it drives.  The 5 most-significant bit(s) in the port expression will be connected to GND. ;
+; data[10..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                     ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "display_7_seg:display|decoder_7_seg:decoder"                                                                                                                                          ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; digit_posn ; Input ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "display_7_seg:display"                                                                                                                                                               ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; units     ; Input ; Warning  ; Input port expression (9 bits) is wider than the input port (5 bits) it drives.  The 4 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; tens      ; Input ; Warning  ; Input port expression (9 bits) is wider than the input port (5 bits) it drives.  The 4 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; hundreds  ; Input ; Warning  ; Input port expression (9 bits) is wider than the input port (5 bits) it drives.  The 4 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; thousands ; Input ; Warning  ; Input port expression (9 bits) is wider than the input port (5 bits) it drives.  The 4 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:05     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Mon Jul 18 19:12:28 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off decimal -c Delay_test
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file i2c_master.v
+    Info (12023): Found entity 1: I2C_master
+Info (12021): Found 1 design units, including 1 entities, in source file decoder_7_seg.v
+    Info (12023): Found entity 1: decoder_7_seg
+Info (12021): Found 1 design units, including 1 entities, in source file display_7_seg.v
+    Info (12023): Found entity 1: display_7_seg
+Info (12021): Found 1 design units, including 1 entities, in source file delay_test.v
+    Info (12023): Found entity 1: Delay_test
+Info (12127): Elaborating entity "Delay_test" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at Delay_test.v(98): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at Delay_test.v(99): truncated value with size 32 to match size of target (9)
+Info (12128): Elaborating entity "display_7_seg" for hierarchy "display_7_seg:display"
+Info (12128): Elaborating entity "decoder_7_seg" for hierarchy "display_7_seg:display|decoder_7_seg:decoder"
+Info (12128): Elaborating entity "I2C_master" for hierarchy "I2C_master:I2C"
+Warning (10036): Verilog HDL or VHDL warning at I2C_master.v(23): object "ADDR_LO" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at I2C_master.v(24): object "ADDR_HI" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at I2C_master.v(33): object "timer1_loop" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at I2C_master.v(35): object "data_lo" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at I2C_master.v(232): truncated value with size 32 to match size of target (9)
+Info (278001): Inferred 3 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0"
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod1"
+Info (12133): Instantiated megafunction "lpm_divide:Mod1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_m9m.tdf
+    Info (12023): Found entity 1: lpm_divide_m9m
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_bkh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_a4f.tdf
+    Info (12023): Found entity 1: alt_u_div_a4f
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0"
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_jhm.tdf
+    Info (12023): Found entity 1: lpm_divide_jhm
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0"
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "SDA" and its non-tri-state driver.
+Info (13060): One or more bidirs are fed by always enabled tri-state buffers
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "SDA" is moved to its source
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "SDA~synth"
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 57 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file D:/decimal/output_files/Delay_test.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "rst_n"
+Info (21057): Implemented 677 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21060): Implemented 1 bidirectional pins
+    Info (21061): Implemented 657 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 453 megabytes
+    Info: Processing ended: Mon Jul 18 19:12:41 2022
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:09
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/decimal/output_files/Delay_test.map.smsg.
+
+

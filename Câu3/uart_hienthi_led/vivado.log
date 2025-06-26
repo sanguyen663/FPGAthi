@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May 27 14:09:40 2024
+# Process ID: 9672
+# Current directory: C:/Users/admin/Desktop/FPGA thi/Câu3/uart_hienthi_led
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent38348 C:\Users\admin\Desktop\FPGA thi\Câu3\uart_hienthi_led\uart_loopback.xpr
+# Log file: C:/Users/admin/Desktop/FPGA thi/Câu3/uart_hienthi_led/vivado.log
+# Journal file: C:/Users/admin/Desktop/FPGA thi/Câu3/uart_hienthi_led\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/admin/Desktop/FPGA thi/Câu3/uart_hienthi_led/uart_loopback.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/FPGA thi/Câu3/uart_hienthi_led' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 27 14:10:23 2024...

@@ -1,0 +1,14 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f7e17e45ebf84d499057bb3b70646570 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ser2par_tb_behav xil_defaultlib.ser2par_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial2paralel
+Compiling module xil_defaultlib.parallel_to_serial
+Compiling module xil_defaultlib.ser2par_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ser2par_tb_behav

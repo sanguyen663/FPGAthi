@@ -1,0 +1,8 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/xilinx/Downloads/serial_to_parallel/serial_to_parallel.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/xilinx/Downloads/serial_to_parallel/serial_to_parallel.srcs/sim_1/new/testbench.v,1716780715,verilog,,,,ser2par_tb,,,,,,,,
+C:/xilinx/Downloads/serial_to_parallel/serial_to_parallel.srcs/sources_1/new/par2ser.v,1716780715,verilog,,C:/xilinx/Downloads/serial_to_parallel/serial_to_parallel.srcs/sources_1/new/ser2par.v,,parallel_to_serial,,,,,,,,
+C:/xilinx/Downloads/serial_to_parallel/serial_to_parallel.srcs/sources_1/new/ser2par.v,1716780715,verilog,,C:/xilinx/Downloads/serial_to_parallel/serial_to_parallel.srcs/sim_1/new/testbench.v,,serial2paralel,,,,,,,,
