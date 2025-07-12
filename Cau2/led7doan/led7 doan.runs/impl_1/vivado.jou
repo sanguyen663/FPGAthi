@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun 30 08:49:23 2025
+# Process ID: 9336
+# Current directory: C:/Users/VICTUS/Desktop/FPGAthi/Câu2/led7doan/led7 doan.runs/impl_1
+# Command line: vivado.exe -log test_segment7_led.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source test_segment7_led.tcl -notrace
+# Log file: C:/Users/VICTUS/Desktop/FPGAthi/Câu2/led7doan/led7 doan.runs/impl_1/test_segment7_led.vdi
+# Journal file: C:/Users/VICTUS/Desktop/FPGAthi/Câu2/led7doan/led7 doan.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source test_segment7_led.tcl -notrace

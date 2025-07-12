@@ -1,51 +1,52 @@
 #-----------------------------------------------------------
-# Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon May 27 12:11:07 2024
-# Process ID: 28084
-# Current directory: C:/Users/admin/Desktop/bodem
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14632 C:\Users\admin\Desktop\bodem\bodem.xpr
-# Log file: C:/Users/admin/Desktop/bodem/vivado.log
-# Journal file: C:/Users/admin/Desktop/bodem\vivado.jou
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun 30 11:14:38 2025
+# Process ID: 18836
+# Current directory: C:/Users/VICTUS/Desktop/FPGAthi/bodem
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3016 C:\Users\VICTUS\Desktop\FPGAthi\bodem\bodem.xpr
+# Log file: C:/Users/VICTUS/Desktop/FPGAthi/bodem/vivado.log
+# Journal file: C:/Users/VICTUS/Desktop/FPGAthi/bodem\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/admin/Desktop/bodem/bodem.xpr
-INFO: [Project 1-313] Project file moved from 'D:/thi FPGA/bodem' since last save.
+open_project -part xc7a12ticsg325-1L C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/admin/Desktop/bodem' since last save.
 Scanning sources...
 Finished scanning sources
+INFO: [Project 1-573] Overriding 'synth_1' run's part, 'xc7vx485tffg1157-1', with new part: 'xc7a12ticsg325-1L'.
+INFO: [Project 1-573] Overriding 'impl_1' run's part, 'xc7vx485tffg1157-1', with new part: 'xc7a12ticsg325-1L'.
+INFO: [Project 1-563] Overriding project part, 'xc7vx485tffg1157-1', with new part: 'xc7a12ticsg325-1L'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/xilinx/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
 update_compile_order -fileset sources_1
 reset_run synth_1
-launch_runs synth_1 -jobs 8
-[Mon May 27 12:11:31 2024] Launched synth_1...
-Run output will be captured here: C:/Users/admin/Desktop/bodem/bodem.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 8
-[Mon May 27 12:13:09 2024] Launched impl_1...
-Run output will be captured here: C:/Users/admin/Desktop/bodem/bodem.runs/impl_1/runme.log
+launch_runs synth_1 -jobs 6
+[Mon Jun 30 11:16:38 2025] Launched synth_1...
+Run output will be captured here: C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.runs/synth_1/runme.log
 launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/bodem/bodem.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-54] Inspecting design source files for 'tb_random_counter' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/bodem/bodem.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj tb_random_counter_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/bodem/bodem.srcs/sources_1/new/bodem.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.srcs/sources_1/new/bodem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module random_counter
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/bodem/bodem.srcs/sim_1/new/tb_random_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.srcs/sim_1/new/tb_random_counter.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_random_counter
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/bodem/bodem.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/bodem/bodem.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 15eeb9367469494090a27b376eac2d9d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_random_counter_behav xil_defaultlib.tb_random_counter xil_defaultlib.glbl -log elaborate.log 
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.sim/sim_1/behav/xsim'
+"xelab -wto 15eeb9367469494090a27b376eac2d9d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_random_counter_behav xil_defaultlib.tb_random_counter xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 15eeb9367469494090a27b376eac2d9d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_random_counter_behav xil_defaultlib.tb_random_counter xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -56,13 +57,22 @@ Compiling module xil_defaultlib.random_counter
 Compiling module xil_defaultlib.tb_random_counter
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot tb_random_counter_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.sim/sim_1/behav/xsim/xsim.dir/tb_random_counter_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 30 11:17:21 2025...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 736.949 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/admin/Desktop/bodem/bodem.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
    with args "tb_random_counter_behav -key {Behavioral:sim_1:Functional:tb_random_counter} -tclbatch {tb_random_counter.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
+Vivado Simulator 2019.1
 Time resolution is 1 ps
 source tb_random_counter.tcl
 # set curr_wave [current_wave_config]
@@ -79,8 +89,506 @@ At time 0: clk_out = x
 At time 10000: clk_out = 0
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_random_counter_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 876.625 ; gain = 19.887
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 757.367 ; gain = 21.672
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
-exit
-INFO: [Common 17-206] Exiting Vivado at Mon May 27 14:04:55 2024...
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 777.863 ; gain = 8.566
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Mon Jun 30 11:35:00 2025] Launched synth_1...
+Run output will be captured here: C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_random_counter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_random_counter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.srcs/sources_1/new/bodem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module random_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.srcs/sim_1/new/tb_random_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_random_counter
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.sim/sim_1/behav/xsim'
+"xelab -wto 15eeb9367469494090a27b376eac2d9d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_random_counter_behav xil_defaultlib.tb_random_counter xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 15eeb9367469494090a27b376eac2d9d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_random_counter_behav xil_defaultlib.tb_random_counter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.random_counter
+Compiling module xil_defaultlib.tb_random_counter
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_random_counter_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/VICTUS/Desktop/FPGAthi/bodem/bodem.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_random_counter_behav -key {Behavioral:sim_1:Functional:tb_random_counter} -tclbatch {tb_random_counter.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_random_counter.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+At time 0: clk_out = x
+At time 5000: clk_out = 0
+At time 985000: clk_out = 1
+At time 995000: clk_out = 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_random_counter_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 777.863 ; gain = 0.000
+run 10 us
+At time 1945000: clk_out = 1
+At time 1955000: clk_out = 0
+At time 2905000: clk_out = 1
+At time 2915000: clk_out = 0
+At time 3865000: clk_out = 1
+At time 3875000: clk_out = 0
+At time 4825000: clk_out = 1
+At time 4835000: clk_out = 0
+At time 5785000: clk_out = 1
+At time 5795000: clk_out = 0
+At time 6745000: clk_out = 1
+At time 6755000: clk_out = 0
+At time 7705000: clk_out = 1
+At time 7715000: clk_out = 0
+At time 8665000: clk_out = 1
+At time 8675000: clk_out = 0
+At time 9625000: clk_out = 1
+At time 9635000: clk_out = 0
+At time 10585000: clk_out = 1
+At time 10595000: clk_out = 0
+run 100 us
+At time 11545000: clk_out = 1
+At time 11555000: clk_out = 0
+At time 12505000: clk_out = 1
+At time 12515000: clk_out = 0
+At time 13465000: clk_out = 1
+At time 13475000: clk_out = 0
+At time 14425000: clk_out = 1
+At time 14435000: clk_out = 0
+At time 15385000: clk_out = 1
+At time 15395000: clk_out = 0
+At time 16345000: clk_out = 1
+At time 16355000: clk_out = 0
+At time 17305000: clk_out = 1
+At time 17315000: clk_out = 0
+At time 18265000: clk_out = 1
+At time 18275000: clk_out = 0
+At time 19225000: clk_out = 1
+At time 19235000: clk_out = 0
+At time 20185000: clk_out = 1
+At time 20195000: clk_out = 0
+At time 21145000: clk_out = 1
+At time 21155000: clk_out = 0
+At time 22105000: clk_out = 1
+At time 22115000: clk_out = 0
+At time 23065000: clk_out = 1
+At time 23075000: clk_out = 0
+At time 24025000: clk_out = 1
+At time 24035000: clk_out = 0
+At time 24985000: clk_out = 1
+At time 24995000: clk_out = 0
+At time 25945000: clk_out = 1
+At time 25955000: clk_out = 0
+At time 26905000: clk_out = 1
+At time 26915000: clk_out = 0
+At time 27865000: clk_out = 1
+At time 27875000: clk_out = 0
+At time 28825000: clk_out = 1
+At time 28835000: clk_out = 0
+At time 29785000: clk_out = 1
+At time 29795000: clk_out = 0
+At time 30745000: clk_out = 1
+At time 30755000: clk_out = 0
+At time 31705000: clk_out = 1
+At time 31715000: clk_out = 0
+At time 32665000: clk_out = 1
+At time 32675000: clk_out = 0
+At time 33625000: clk_out = 1
+At time 33635000: clk_out = 0
+At time 34585000: clk_out = 1
+At time 34595000: clk_out = 0
+At time 35545000: clk_out = 1
+At time 35555000: clk_out = 0
+At time 36505000: clk_out = 1
+At time 36515000: clk_out = 0
+At time 37465000: clk_out = 1
+At time 37475000: clk_out = 0
+At time 38425000: clk_out = 1
+At time 38435000: clk_out = 0
+At time 39385000: clk_out = 1
+At time 39395000: clk_out = 0
+At time 40345000: clk_out = 1
+At time 40355000: clk_out = 0
+At time 41305000: clk_out = 1
+At time 41315000: clk_out = 0
+At time 42265000: clk_out = 1
+At time 42275000: clk_out = 0
+At time 43225000: clk_out = 1
+At time 43235000: clk_out = 0
+At time 44185000: clk_out = 1
+At time 44195000: clk_out = 0
+At time 45145000: clk_out = 1
+At time 45155000: clk_out = 0
+At time 46105000: clk_out = 1
+At time 46115000: clk_out = 0
+At time 47065000: clk_out = 1
+At time 47075000: clk_out = 0
+At time 48025000: clk_out = 1
+At time 48035000: clk_out = 0
+At time 48985000: clk_out = 1
+At time 48995000: clk_out = 0
+At time 49945000: clk_out = 1
+At time 49955000: clk_out = 0
+At time 50905000: clk_out = 1
+At time 50915000: clk_out = 0
+At time 51865000: clk_out = 1
+At time 51875000: clk_out = 0
+At time 52825000: clk_out = 1
+At time 52835000: clk_out = 0
+At time 53785000: clk_out = 1
+At time 53795000: clk_out = 0
+At time 54745000: clk_out = 1
+At time 54755000: clk_out = 0
+At time 55705000: clk_out = 1
+At time 55715000: clk_out = 0
+At time 56665000: clk_out = 1
+At time 56675000: clk_out = 0
+At time 57625000: clk_out = 1
+At time 57635000: clk_out = 0
+At time 58585000: clk_out = 1
+At time 58595000: clk_out = 0
+At time 59545000: clk_out = 1
+At time 59555000: clk_out = 0
+At time 60505000: clk_out = 1
+At time 60515000: clk_out = 0
+At time 61465000: clk_out = 1
+At time 61475000: clk_out = 0
+At time 62425000: clk_out = 1
+At time 62435000: clk_out = 0
+At time 63385000: clk_out = 1
+At time 63395000: clk_out = 0
+At time 64345000: clk_out = 1
+At time 64355000: clk_out = 0
+At time 65305000: clk_out = 1
+At time 65315000: clk_out = 0
+At time 66265000: clk_out = 1
+At time 66275000: clk_out = 0
+At time 67225000: clk_out = 1
+At time 67235000: clk_out = 0
+At time 68185000: clk_out = 1
+At time 68195000: clk_out = 0
+At time 69145000: clk_out = 1
+At time 69155000: clk_out = 0
+At time 70105000: clk_out = 1
+At time 70115000: clk_out = 0
+At time 71065000: clk_out = 1
+At time 71075000: clk_out = 0
+At time 72025000: clk_out = 1
+At time 72035000: clk_out = 0
+At time 72985000: clk_out = 1
+At time 72995000: clk_out = 0
+At time 73945000: clk_out = 1
+At time 73955000: clk_out = 0
+At time 74905000: clk_out = 1
+At time 74915000: clk_out = 0
+At time 75865000: clk_out = 1
+At time 75875000: clk_out = 0
+At time 76825000: clk_out = 1
+At time 76835000: clk_out = 0
+At time 77785000: clk_out = 1
+At time 77795000: clk_out = 0
+At time 78745000: clk_out = 1
+At time 78755000: clk_out = 0
+At time 79705000: clk_out = 1
+At time 79715000: clk_out = 0
+At time 80665000: clk_out = 1
+At time 80675000: clk_out = 0
+At time 81625000: clk_out = 1
+At time 81635000: clk_out = 0
+At time 82585000: clk_out = 1
+At time 82595000: clk_out = 0
+At time 83545000: clk_out = 1
+At time 83555000: clk_out = 0
+At time 84505000: clk_out = 1
+At time 84515000: clk_out = 0
+At time 85465000: clk_out = 1
+At time 85475000: clk_out = 0
+At time 86425000: clk_out = 1
+At time 86435000: clk_out = 0
+At time 87385000: clk_out = 1
+At time 87395000: clk_out = 0
+At time 88345000: clk_out = 1
+At time 88355000: clk_out = 0
+At time 89305000: clk_out = 1
+At time 89315000: clk_out = 0
+At time 90265000: clk_out = 1
+At time 90275000: clk_out = 0
+At time 91225000: clk_out = 1
+At time 91235000: clk_out = 0
+At time 92185000: clk_out = 1
+At time 92195000: clk_out = 0
+At time 93145000: clk_out = 1
+At time 93155000: clk_out = 0
+At time 94105000: clk_out = 1
+At time 94115000: clk_out = 0
+At time 95065000: clk_out = 1
+At time 95075000: clk_out = 0
+At time 96025000: clk_out = 1
+At time 96035000: clk_out = 0
+At time 96985000: clk_out = 1
+At time 96995000: clk_out = 0
+At time 97945000: clk_out = 1
+At time 97955000: clk_out = 0
+At time 98905000: clk_out = 1
+At time 98915000: clk_out = 0
+At time 99865000: clk_out = 1
+At time 99875000: clk_out = 0
+At time 100825000: clk_out = 1
+At time 100835000: clk_out = 0
+At time 101785000: clk_out = 1
+At time 101795000: clk_out = 0
+At time 102745000: clk_out = 1
+At time 102755000: clk_out = 0
+At time 103705000: clk_out = 1
+At time 103715000: clk_out = 0
+At time 104665000: clk_out = 1
+At time 104675000: clk_out = 0
+At time 105625000: clk_out = 1
+At time 105635000: clk_out = 0
+At time 106585000: clk_out = 1
+At time 106595000: clk_out = 0
+At time 107545000: clk_out = 1
+At time 107555000: clk_out = 0
+At time 108505000: clk_out = 1
+At time 108515000: clk_out = 0
+At time 109465000: clk_out = 1
+At time 109475000: clk_out = 0
+At time 110425000: clk_out = 1
+At time 110435000: clk_out = 0
+run 100 us
+At time 111385000: clk_out = 1
+At time 111395000: clk_out = 0
+At time 112345000: clk_out = 1
+At time 112355000: clk_out = 0
+At time 113305000: clk_out = 1
+At time 113315000: clk_out = 0
+At time 114265000: clk_out = 1
+At time 114275000: clk_out = 0
+At time 115225000: clk_out = 1
+At time 115235000: clk_out = 0
+At time 116185000: clk_out = 1
+At time 116195000: clk_out = 0
+At time 117145000: clk_out = 1
+At time 117155000: clk_out = 0
+At time 118105000: clk_out = 1
+At time 118115000: clk_out = 0
+At time 119065000: clk_out = 1
+At time 119075000: clk_out = 0
+At time 120025000: clk_out = 1
+At time 120035000: clk_out = 0
+At time 120985000: clk_out = 1
+At time 120995000: clk_out = 0
+At time 121945000: clk_out = 1
+At time 121955000: clk_out = 0
+At time 122905000: clk_out = 1
+At time 122915000: clk_out = 0
+At time 123865000: clk_out = 1
+At time 123875000: clk_out = 0
+At time 124825000: clk_out = 1
+At time 124835000: clk_out = 0
+At time 125785000: clk_out = 1
+At time 125795000: clk_out = 0
+At time 126745000: clk_out = 1
+At time 126755000: clk_out = 0
+At time 127705000: clk_out = 1
+At time 127715000: clk_out = 0
+At time 128665000: clk_out = 1
+At time 128675000: clk_out = 0
+At time 129625000: clk_out = 1
+At time 129635000: clk_out = 0
+At time 130585000: clk_out = 1
+At time 130595000: clk_out = 0
+At time 131545000: clk_out = 1
+At time 131555000: clk_out = 0
+At time 132505000: clk_out = 1
+At time 132515000: clk_out = 0
+At time 133465000: clk_out = 1
+At time 133475000: clk_out = 0
+At time 134425000: clk_out = 1
+At time 134435000: clk_out = 0
+At time 135385000: clk_out = 1
+At time 135395000: clk_out = 0
+At time 136345000: clk_out = 1
+At time 136355000: clk_out = 0
+At time 137305000: clk_out = 1
+At time 137315000: clk_out = 0
+At time 138265000: clk_out = 1
+At time 138275000: clk_out = 0
+At time 139225000: clk_out = 1
+At time 139235000: clk_out = 0
+At time 140185000: clk_out = 1
+At time 140195000: clk_out = 0
+At time 141145000: clk_out = 1
+At time 141155000: clk_out = 0
+At time 142105000: clk_out = 1
+At time 142115000: clk_out = 0
+At time 143065000: clk_out = 1
+At time 143075000: clk_out = 0
+At time 144025000: clk_out = 1
+At time 144035000: clk_out = 0
+At time 144985000: clk_out = 1
+At time 144995000: clk_out = 0
+At time 145945000: clk_out = 1
+At time 145955000: clk_out = 0
+At time 146905000: clk_out = 1
+At time 146915000: clk_out = 0
+At time 147865000: clk_out = 1
+At time 147875000: clk_out = 0
+At time 148825000: clk_out = 1
+At time 148835000: clk_out = 0
+At time 149785000: clk_out = 1
+At time 149795000: clk_out = 0
+At time 150745000: clk_out = 1
+At time 150755000: clk_out = 0
+At time 151705000: clk_out = 1
+At time 151715000: clk_out = 0
+At time 152665000: clk_out = 1
+At time 152675000: clk_out = 0
+At time 153625000: clk_out = 1
+At time 153635000: clk_out = 0
+At time 154585000: clk_out = 1
+At time 154595000: clk_out = 0
+At time 155545000: clk_out = 1
+At time 155555000: clk_out = 0
+At time 156505000: clk_out = 1
+At time 156515000: clk_out = 0
+At time 157465000: clk_out = 1
+At time 157475000: clk_out = 0
+At time 158425000: clk_out = 1
+At time 158435000: clk_out = 0
+At time 159385000: clk_out = 1
+At time 159395000: clk_out = 0
+At time 160345000: clk_out = 1
+At time 160355000: clk_out = 0
+At time 161305000: clk_out = 1
+At time 161315000: clk_out = 0
+At time 162265000: clk_out = 1
+At time 162275000: clk_out = 0
+At time 163225000: clk_out = 1
+At time 163235000: clk_out = 0
+At time 164185000: clk_out = 1
+At time 164195000: clk_out = 0
+At time 165145000: clk_out = 1
+At time 165155000: clk_out = 0
+At time 166105000: clk_out = 1
+At time 166115000: clk_out = 0
+At time 167065000: clk_out = 1
+At time 167075000: clk_out = 0
+At time 168025000: clk_out = 1
+At time 168035000: clk_out = 0
+At time 168985000: clk_out = 1
+At time 168995000: clk_out = 0
+At time 169945000: clk_out = 1
+At time 169955000: clk_out = 0
+At time 170905000: clk_out = 1
+At time 170915000: clk_out = 0
+At time 171865000: clk_out = 1
+At time 171875000: clk_out = 0
+At time 172825000: clk_out = 1
+At time 172835000: clk_out = 0
+At time 173785000: clk_out = 1
+At time 173795000: clk_out = 0
+At time 174745000: clk_out = 1
+At time 174755000: clk_out = 0
+At time 175705000: clk_out = 1
+At time 175715000: clk_out = 0
+At time 176665000: clk_out = 1
+At time 176675000: clk_out = 0
+At time 177625000: clk_out = 1
+At time 177635000: clk_out = 0
+At time 178585000: clk_out = 1
+At time 178595000: clk_out = 0
+At time 179545000: clk_out = 1
+At time 179555000: clk_out = 0
+At time 180505000: clk_out = 1
+At time 180515000: clk_out = 0
+At time 181465000: clk_out = 1
+At time 181475000: clk_out = 0
+At time 182425000: clk_out = 1
+At time 182435000: clk_out = 0
+At time 183385000: clk_out = 1
+At time 183395000: clk_out = 0
+At time 184345000: clk_out = 1
+At time 184355000: clk_out = 0
+At time 185305000: clk_out = 1
+At time 185315000: clk_out = 0
+At time 186265000: clk_out = 1
+At time 186275000: clk_out = 0
+At time 187225000: clk_out = 1
+At time 187235000: clk_out = 0
+At time 188185000: clk_out = 1
+At time 188195000: clk_out = 0
+At time 189145000: clk_out = 1
+At time 189155000: clk_out = 0
+At time 190105000: clk_out = 1
+At time 190115000: clk_out = 0
+At time 191065000: clk_out = 1
+At time 191075000: clk_out = 0
+At time 192025000: clk_out = 1
+At time 192035000: clk_out = 0
+At time 192985000: clk_out = 1
+At time 192995000: clk_out = 0
+At time 193945000: clk_out = 1
+At time 193955000: clk_out = 0
+At time 194905000: clk_out = 1
+At time 194915000: clk_out = 0
+At time 195865000: clk_out = 1
+At time 195875000: clk_out = 0
+At time 196825000: clk_out = 1
+At time 196835000: clk_out = 0
+At time 197785000: clk_out = 1
+At time 197795000: clk_out = 0
+At time 198745000: clk_out = 1
+At time 198755000: clk_out = 0
+At time 199705000: clk_out = 1
+At time 199715000: clk_out = 0
+At time 200665000: clk_out = 1
+At time 200675000: clk_out = 0
+At time 201625000: clk_out = 1
+At time 201635000: clk_out = 0
+At time 202585000: clk_out = 1
+At time 202595000: clk_out = 0
+At time 203545000: clk_out = 1
+At time 203555000: clk_out = 0
+At time 204505000: clk_out = 1
+At time 204515000: clk_out = 0
+At time 205465000: clk_out = 1
+At time 205475000: clk_out = 0
+At time 206425000: clk_out = 1
+At time 206435000: clk_out = 0
+At time 207385000: clk_out = 1
+At time 207395000: clk_out = 0
+At time 208345000: clk_out = 1
+At time 208355000: clk_out = 0
+At time 209305000: clk_out = 1
+At time 209315000: clk_out = 0
+At time 210265000: clk_out = 1
+At time 210275000: clk_out = 0

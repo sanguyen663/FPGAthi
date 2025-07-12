@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 05/27/2024 09:06:40 AM
-// Design Name: 
-// Module Name: bodem
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module random_counter(
     input clk,
@@ -27,29 +7,28 @@ module random_counter(
     output [9:0] o_count
     );
     
-    reg [9:0] count; // 20-bit counter
+    reg [9:0] count; // Dùng 10-bit ?? ?? ??m ??n 100
+
+    // B? ??m t? 5 ??n 100
     always @(posedge clk or negedge reset) begin
-    if (!reset)
-        count <= 0;
-    else begin if (count == 1023)
-        count <= 0;
-        else 
-            count <= count +1;
-        end
+        if (!reset)
+            count <= 5;           // Reset v? 5
+        else if (count == 100)
+            count <= 5;           // Quay v? 5 khi ??t 100
+        else
+            count <= count + 1;   // T?ng bình th??ng
     end
-    
+
+    // X? lý clk_out (ví d?: phát xung m?i khi ??m ??t 100)
     always @(posedge clk or negedge reset) begin
-        if (!reset) begin
-            count <= 0; // Reset counter to 0
-            clk_out <= 0; // Reset clock output
-        end else begin
-            if (count == 500) begin // 2^20 - 
-                clk_out <= 1;
-            end else if (count == 750) 
-                clk_out <= 0;
-        end
+        if (!reset)
+            clk_out <= 0;
+        else if (count == 100)
+            clk_out <= 1;
+        else
+            clk_out <= 0;
     end
-    
+
     assign o_count = count;
-    
+
 endmodule

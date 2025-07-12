@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jun 28 19:36:37 2025
+# Process ID: 20312
+# Current directory: C:/Users/VICTUS/Desktop/FPGAthi/Câu3/uart_hienthi_led
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2276 C:\Users\VICTUS\Desktop\FPGAthi\Câu3\uart_hienthi_led\uart_loopback.xpr
+# Log file: C:/Users/VICTUS/Desktop/FPGAthi/Câu3/uart_hienthi_led/vivado.log
+# Journal file: C:/Users/VICTUS/Desktop/FPGAthi/Câu3/uart_hienthi_led\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/VICTUS/Desktop/FPGAthi/Câu3/uart_hienthi_led/uart_loopback.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1

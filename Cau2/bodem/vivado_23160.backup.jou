@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May 27 11:41:36 2024
+# Process ID: 23160
+# Current directory: D:/FPGA thi/Câu3/bodem
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18204 D:\FPGA thi\Câu3\bodem\bodem.xpr
+# Log file: D:/FPGA thi/Câu3/bodem/vivado.log
+# Journal file: D:/FPGA thi/Câu3/bodem\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA thi/Câu3/bodem/bodem.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_random_counter.tcl
+close_sim

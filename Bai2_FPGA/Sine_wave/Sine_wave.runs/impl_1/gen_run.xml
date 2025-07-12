@@ -3,11 +3,11 @@
   <File Type="ROUTE-PWR" Name="sine_wave_power_routed.rpt"/>
   <File Type="PA-TCL" Name="sine_wave.tcl"/>
   <File Type="PWROPT-DCP" Name="sine_wave_pwropt.dcp"/>
+  <File Type="OPT-DCP" Name="sine_wave_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="sine_wave_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="sine_wave_reports.tcl"/>
   <File Type="BG-DRC" Name="sine_wave.drc"/>
   <File Type="OPT-HWDEF" Name="sine_wave.hwdef"/>
-  <File Type="OPT-DCP" Name="sine_wave_opt.dcp"/>
   <File Type="OPT-DRC" Name="sine_wave_drc_opted.rpt"/>
   <File Type="PLACE-DCP" Name="sine_wave_placed.dcp"/>
   <File Type="PLACE-IO" Name="sine_wave_io_placed.rpt"/>
@@ -23,12 +23,15 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="sine_wave_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="sine_wave_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="sine_wave_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="sine_wave.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="sine_wave_drc_routed.rpx"/>
   <File Type="BITSTR-MSK" Name="sine_wave.msk"/>
+  <File Type="BITSTR-MMI" Name="sine_wave.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="sine_wave_methodology_drc_routed.rpt"/>
   <File Type="BG-BGN" Name="sine_wave.bgn"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sine_wave_methodology_drc_routed.rpx"/>
   <File Type="BITSTR-RBT" Name="sine_wave.rbt"/>
+  <File Type="BITSTR-SYSDEF" Name="sine_wave.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sine_wave_methodology_drc_routed.pb"/>
   <File Type="BG-BIN" Name="sine_wave.bin"/>
   <File Type="ROUTE-PWR-RPX" Name="sine_wave_power_routed.rpx"/>
@@ -37,15 +40,12 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="sine_wave_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="sine_wave_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="sine_wave_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-CLK" Name="sine_wave_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="sine_wave.vdi"/>
+  <File Type="ROUTE-CLK" Name="sine_wave_clock_utilization_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="sine_wave_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="sine_wave_postroute_physopt_bb.dcp"/>
   <File Type="BITSTR-NKY" Name="sine_wave.nky"/>
   <File Type="BITSTR-BMM" Name="sine_wave_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="sine_wave.mmi"/>
-  <File Type="BITSTR-LTX" Name="sine_wave.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="sine_wave.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun 30 11:40:09 2025
+# Process ID: 17976
+# Current directory: C:/Users/VICTUS/Desktop/FPGAthi/Cau2/led7doan
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18928 C:\Users\VICTUS\Desktop\FPGAthi\Cau2\led7doan\led7 doan.xpr
+# Log file: C:/Users/VICTUS/Desktop/FPGAthi/Cau2/led7doan/vivado.log
+# Journal file: C:/Users/VICTUS/Desktop/FPGAthi/Cau2/led7doan\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/VICTUS/Desktop/FPGAthi/Cau2/led7doan/led7 doan.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/VICTUS/Desktop/FPGAthi/Câu2/led7doan' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 727.195 ; gain = 100.305
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 30 11:56:18 2025...

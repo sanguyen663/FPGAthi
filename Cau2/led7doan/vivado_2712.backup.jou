@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun 30 08:47:10 2025
+# Process ID: 2712
+# Current directory: C:/Users/VICTUS/Desktop/FPGAthi/Câu2/led7doan
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19952 C:\Users\VICTUS\Desktop\FPGAthi\Câu2\led7doan\led7 doan.xpr
+# Log file: C:/Users/VICTUS/Desktop/FPGAthi/Câu2/led7doan/vivado.log
+# Journal file: C:/Users/VICTUS/Desktop/FPGAthi/Câu2/led7doan\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/VICTUS/Desktop/FPGAthi/Câu2/led7doan/led7 doan.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source test_segment7_led.tcl
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close_sim

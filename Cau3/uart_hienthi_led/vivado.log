@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun 30 11:24:14 2025
+# Process ID: 1668
+# Current directory: C:/Users/VICTUS/Desktop/FPGAthi/Cau3/uart_hienthi_led
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20748 C:\Users\VICTUS\Desktop\FPGAthi\Cau3\uart_hienthi_led\uart_loopback.xpr
+# Log file: C:/Users/VICTUS/Desktop/FPGAthi/Cau3/uart_hienthi_led/vivado.log
+# Journal file: C:/Users/VICTUS/Desktop/FPGAthi/Cau3/uart_hienthi_led\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/VICTUS/Desktop/FPGAthi/Cau3/uart_hienthi_led/uart_loopback.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/VICTUS/Desktop/FPGAthi/Câu3/uart_hienthi_led' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Jun 30 11:24:44 2025] Launched synth_1...
+Run output will be captured here: C:/Users/VICTUS/Desktop/FPGAthi/Cau3/uart_hienthi_led/uart_loopback.runs/synth_1/runme.log
+[Mon Jun 30 11:24:44 2025] Launched impl_1...
+Run output will be captured here: C:/Users/VICTUS/Desktop/FPGAthi/Cau3/uart_hienthi_led/uart_loopback.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {C:/Users/VICTUS/Desktop/FPGAthi/Cau3/uart_hienthi_led/uart_loopback.runs/impl_1/uart_loopback.bit} [get_hw_devices xc7a35t_0]
+close_hw

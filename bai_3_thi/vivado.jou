@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun 30 11:53:13 2025
+# Process ID: 19888
+# Current directory: C:/Users/VICTUS/Desktop/FPGAthi/bai_3_thi
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4568 C:\Users\VICTUS\Desktop\FPGAthi\bai_3_thi\bai_3_thi.xpr
+# Log file: C:/Users/VICTUS/Desktop/FPGAthi/bai_3_thi/vivado.log
+# Journal file: C:/Users/VICTUS/Desktop/FPGAthi/bai_3_thi\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/VICTUS/Desktop/FPGAthi/bai_3_thi/bai_3_thi.xpr
+update_compile_order -fileset sources_1

@@ -1,46 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tfgg484-2" LaunchTime="1716799213">
   <File Type="PWROPT-DCP" Name="test_segment7_led_pwropt.dcp"/>
+  <File Type="BITSTR-BMM" Name="test_segment7_led_bd.bmm"/>
   <File Type="ROUTE-PWR" Name="test_segment7_led_power_routed.rpt"/>
   <File Type="PA-TCL" Name="test_segment7_led.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="test_segment7_led_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="test_segment7_led_reports.tcl"/>
   <File Type="BG-DRC" Name="test_segment7_led.drc"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="test_segment7_led_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="test_segment7_led_timing_summary_init.rpt"/>
   <File Type="OPT-HWDEF" Name="test_segment7_led.hwdef"/>
   <File Type="OPT-DCP" Name="test_segment7_led_opt.dcp"/>
   <File Type="OPT-DRC" Name="test_segment7_led_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="test_segment7_led_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="test_segment7_led_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="test_segment7_led_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="test_segment7_led_placed.dcp"/>
   <File Type="PLACE-IO" Name="test_segment7_led_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="test_segment7_led_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="test_segment7_led_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="test_segment7_led_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="test_segment7_led_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="test_segment7_led_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="test_segment7_led_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="test_segment7_led_timing_summary_placed.rpt"/>
+  <File Type="BG-BGN" Name="test_segment7_led.bgn"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="test_segment7_led_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="test_segment7_led_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="BG-BIN" Name="test_segment7_led.bin"/>
   <File Type="PHYSOPT-DCP" Name="test_segment7_led_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="test_segment7_led_drc_physopted.rpt"/>
   <File Type="BG-BIT" Name="test_segment7_led.bit"/>
-  <File Type="PHYSOPT-TIMING" Name="test_segment7_led_timing_summary_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="test_segment7_led.msk"/>
   <File Type="ROUTE-ERROR-DCP" Name="test_segment7_led_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="test_segment7_led_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="test_segment7_led_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="test_segment7_led_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="test_segment7_led_drc_routed.pb"/>
-  <File Type="BITSTR-MSK" Name="test_segment7_led.msk"/>
+  <File Type="BITSTR-LTX" Name="test_segment7_led.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="test_segment7_led_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="test_segment7_led.bgn"/>
+  <File Type="BITSTR-MMI" Name="test_segment7_led.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="test_segment7_led_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-RBT" Name="test_segment7_led.rbt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="test_segment7_led_methodology_drc_routed.rpx"/>
-  <File Type="BG-BIN" Name="test_segment7_led.bin"/>
+  <File Type="BITSTR-SYSDEF" Name="test_segment7_led.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="test_segment7_led_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="test_segment7_led_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="test_segment7_led_route_status.rpt"/>
@@ -48,20 +41,11 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="test_segment7_led_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="test_segment7_led_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="test_segment7_led_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="test_segment7_led_incremental_reuse_routed.rpt"/>
-  <File Type="RDI-RDI" Name="test_segment7_led.vdi"/>
   <File Type="ROUTE-CLK" Name="test_segment7_led_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="test_segment7_led.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="test_segment7_led_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="test_segment7_led_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="test_segment7_led_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="test_segment7_led_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="test_segment7_led_timing_summary_postroute_physopted.rpx"/>
   <File Type="BITSTR-NKY" Name="test_segment7_led.nky"/>
-  <File Type="BITSTR-BMM" Name="test_segment7_led_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="test_segment7_led.mmi"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="test_segment7_led.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="test_segment7_led.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -106,9 +90,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

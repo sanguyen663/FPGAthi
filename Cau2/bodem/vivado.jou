@@ -1,17 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon May 27 11:41:36 2024
-# Process ID: 23160
-# Current directory: D:/FPGA thi/Câu3/bodem
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18204 D:\FPGA thi\Câu3\bodem\bodem.xpr
-# Log file: D:/FPGA thi/Câu3/bodem/vivado.log
-# Journal file: D:/FPGA thi/Câu3/bodem\vivado.jou
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun 30 08:20:40 2025
+# Process ID: 20860
+# Current directory: C:/Users/VICTUS/Desktop/FPGAthi/Câu2/bodem
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14840 C:\Users\VICTUS\Desktop\FPGAthi\Câu2\bodem\bodem.xpr
+# Log file: C:/Users/VICTUS/Desktop/FPGAthi/Câu2/bodem/vivado.log
+# Journal file: C:/Users/VICTUS/Desktop/FPGAthi/Câu2/bodem\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {D:/FPGA thi/Câu3/bodem/bodem.xpr}
+open_project -part xc7a12ticsg325-1L C:/Users/VICTUS/Desktop/FPGAthi/Câu2/bodem/bodem.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-source tb_random_counter.tcl
-close_sim

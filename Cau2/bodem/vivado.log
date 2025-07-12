@@ -1,79 +1,25 @@
 #-----------------------------------------------------------
-# Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon May 27 11:41:36 2024
-# Process ID: 23160
-# Current directory: D:/FPGA thi/Câu3/bodem
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18204 D:\FPGA thi\Câu3\bodem\bodem.xpr
-# Log file: D:/FPGA thi/Câu3/bodem/vivado.log
-# Journal file: D:/FPGA thi/Câu3/bodem\vivado.jou
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun 30 08:20:40 2025
+# Process ID: 20860
+# Current directory: C:/Users/VICTUS/Desktop/FPGAthi/Câu2/bodem
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14840 C:\Users\VICTUS\Desktop\FPGAthi\Câu2\bodem\bodem.xpr
+# Log file: C:/Users/VICTUS/Desktop/FPGAthi/Câu2/bodem/vivado.log
+# Journal file: C:/Users/VICTUS/Desktop/FPGAthi/Câu2/bodem\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {D:/FPGA thi/Câu3/bodem/bodem.xpr}
-INFO: [Project 1-313] Project file moved from 'D:/thi FPGA/bodem' since last save.
+open_project -part xc7a12ticsg325-1L C:/Users/VICTUS/Desktop/FPGAthi/Câu2/bodem/bodem.xpr
+INFO: [Project 1-313] Project file moved from 'D:/FPGA thi/Câu3/bodem' since last save.
 Scanning sources...
 Finished scanning sources
+INFO: [Project 1-573] Overriding 'synth_1' run's part, 'xc7vx485tffg1157-1', with new part: 'xc7a12ticsg325-1L'.
+INFO: [Project 1-573] Overriding 'impl_1' run's part, 'xc7vx485tffg1157-1', with new part: 'xc7a12ticsg325-1L'.
+INFO: [Project 1-563] Overriding project part, 'xc7vx485tffg1157-1', with new part: 'xc7a12ticsg325-1L'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
 update_compile_order -fileset sources_1
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA thi/Câu3/bodem/bodem.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_random_counter' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA thi/Câu3/bodem/bodem.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_random_counter_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA thi/Câu3/bodem/bodem.srcs/sources_1/new/bodem.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module random_counter
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA thi/Câu3/bodem/bodem.srcs/sim_1/new/tb_random_counter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_random_counter
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA thi/Câu3/bodem/bodem.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA thi/Câu3/bodem/bodem.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 15eeb9367469494090a27b376eac2d9d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_random_counter_behav xil_defaultlib.tb_random_counter xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.random_counter
-Compiling module xil_defaultlib.tb_random_counter
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_random_counter_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA thi/Câu3/bodem/bodem.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_random_counter_behav -key {Behavioral:sim_1:Functional:tb_random_counter} -tclbatch {tb_random_counter.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source tb_random_counter.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-At time 0: clk_out = x
-At time 10000: clk_out = 0
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_random_counter_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 896.348 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon May 27 11:45:16 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 30 08:21:45 2025...
